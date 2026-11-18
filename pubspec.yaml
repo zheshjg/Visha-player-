@@ -1,5 +1,5 @@
 name: visha_local
-description: Visha Local Player - Direct file access media player
+description: Visha Local Player
 publish_to: 'none'
 version: 1.0.0+1
 
@@ -9,30 +9,13 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
-  # VLC-based player - reads files directly bypassing MediaStore
   flutter_vlc_player: ^7.4.1
-
-  # Audio player with direct path support
   just_audio: ^0.9.36
-
-  # File picker - uses direct file path, NOT content URI
   file_picker: ^6.1.1
-
-  # Audio metadata (album art, artist, title)
   audio_metadata_reader: ^2.2.1
-
-  # Equalizer
-  flutter_equalizer: ^1.0.2
-
-  # UI
-  flutter_animate: ^4.3.0
-  cached_network_image: ^3.3.0
   provider: ^6.1.1
   shared_preferences: ^2.2.2
-
-  # Icons
-  flutter_svg: ^2.0.9
+  flutter_animate: ^4.3.0
 
 dev_dependencies:
   flutter_test:
