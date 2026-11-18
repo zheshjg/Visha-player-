@@ -34,12 +34,12 @@ class _VideoScreenState extends State<VideoScreen> {
   void _initPlayer() {
     final item = widget.items[_idx];
     // VLC reads directly via file:// path — no MediaStore involved
-    _ctrl = VlcPlayerController.file(
-      Uri.file(item.path),
-      hwAcc: HwAcc.full,
-      autoPlay: true,
-      options: const VlcPlayerOptions(),
-    );
+  _ctrl = VlcPlayerController.file(
+  File(item.path),
+  hwAcc: HwAcc.full,
+  autoPlay: true,
+  options: VlcPlayerOptions(),
+);
     _ctrl.addListener(_onVlcEvent);
     _hideOverlayAfterDelay();
   }
